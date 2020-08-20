@@ -9,6 +9,9 @@
 import { ref } from "vue";
 
 export default {
+  mounted() {
+    console.log(process.env.VUE_APP_APIURL);
+  },
   setup() {
     const count = ref("'s'");
     const add = () => {
