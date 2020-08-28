@@ -5,12 +5,18 @@
       <router-link to="/about">About</router-link>
       |
       <router-link to="/test">test</router-link>
+      |
+      <router-link to="/3d">3D</router-link>
     </div>
     <router-view />
   </div>
 </template>
 
 <style lang="scss">
+body {
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

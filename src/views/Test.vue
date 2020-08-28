@@ -10,16 +10,18 @@ import { ref } from "vue";
 
 export default {
   mounted() {
-    console.log(process.env.VUE_APP_APIURL);
+    this.add();
   },
   setup() {
     const count = ref("'s'");
     const add = () => {
       count.value = count.value + "'b'";
     };
+    const a = 1;
     return {
       count,
-      add
+      add,
+      a
     };
   }
 };
