@@ -5,7 +5,6 @@
 </template>
 
 <script>
-import { ref } from "vue";
 import * as THREE from "three";
 export default {
   mounted() {
@@ -13,10 +12,6 @@ export default {
     console.log(process.env.VUE_APP_APIURL);
   },
   setup() {
-    const count = ref("'s'");
-    const add = () => {
-      count.value = count.value + "'b'";
-    };
     const init = () => {
       let container = document.getElementById("container");
       let scene = new THREE.Scene();
@@ -64,8 +59,6 @@ export default {
       renderer.render(scene, camera);
     };
     return {
-      count,
-      add,
       init
     };
   }
